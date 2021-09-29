@@ -31,10 +31,10 @@ namespace DbExample332.Forms
         {
             this.btLoad = new System.Windows.Forms.Button();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
-            this.LoginColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FioColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btAdd = new System.Windows.Forms.Button();
             this.brEdit = new System.Windows.Forms.Button();
+            this.FioColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoginColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,28 +54,14 @@ namespace DbExample332.Forms
             this.dgvUsers.AllowUserToDeleteRows = false;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.LoginColumn,
-            this.FioColumn});
+            this.FioColumn,
+            this.LoginColumn});
             this.dgvUsers.Location = new System.Drawing.Point(23, 107);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
             this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsers.Size = new System.Drawing.Size(522, 196);
             this.dgvUsers.TabIndex = 1;
-            // 
-            // LoginColumn
-            // 
-            this.LoginColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.LoginColumn.HeaderText = "Логин";
-            this.LoginColumn.Name = "LoginColumn";
-            this.LoginColumn.ReadOnly = true;
-            // 
-            // FioColumn
-            // 
-            this.FioColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FioColumn.HeaderText = "ФИО";
-            this.FioColumn.Name = "FioColumn";
-            this.FioColumn.ReadOnly = true;
             // 
             // btAdd
             // 
@@ -97,6 +83,20 @@ namespace DbExample332.Forms
             this.brEdit.UseVisualStyleBackColor = true;
             this.brEdit.Click += new System.EventHandler(this.brEdit_Click);
             // 
+            // FioColumn
+            // 
+            this.FioColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FioColumn.HeaderText = "ФИО";
+            this.FioColumn.Name = "FioColumn";
+            this.FioColumn.ReadOnly = true;
+            // 
+            // LoginColumn
+            // 
+            this.LoginColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.LoginColumn.HeaderText = "Логин";
+            this.LoginColumn.Name = "LoginColumn";
+            this.LoginColumn.ReadOnly = true;
+            // 
             // UsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,10 +117,10 @@ namespace DbExample332.Forms
 
         private System.Windows.Forms.Button btLoad;
         private System.Windows.Forms.DataGridView dgvUsers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoginColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FioColumn;
         private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Button brEdit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FioColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoginColumn;
     }
 }
 

@@ -27,7 +27,7 @@ namespace DbExample332.Forms
             foreach (User user in User.Select())
             {
                 //Выводим значение поля UserLogin UserName - возвращаем номер строки
-                int r = dgvUsers.Rows.Add(user.UserLogin, user.UserName);
+                int r = dgvUsers.Rows.Add(user.UserName, user.UserLogin);
                 //Записываем пользователя в тег строки
                 dgvUsers.Rows[r].Tag = user;
             }
